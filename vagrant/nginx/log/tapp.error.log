@@ -1,0 +1,12 @@
+2019/02/03 23:06:43 [error] 6914#6914: *10 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'app\controllers\yii\web\Controller' not found in /app/controllers/PostController.php on line 5
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /app/web/index.php:0
+PHP message: PHP   2. yii\base\Application->run() /app/web/index.php:12
+PHP message: PHP   3. yii\web\Application->handleRequest() /app/vendor/yiisoft/yii2/base/Application.php:386
+PHP message: PHP   4. yii\base\Module->runAction() /app/vendor/yiisoft/yii2/web/Application.php:103
+PHP message: PHP   5. yii\base\Module->createController() /app/vendor/yiisoft/yii2/base/Module.php:522
+PHP message: PHP   6. yii\base\Module->createControllerByID() /app/vendor/yiisoft/yii2/base/Module.php:596
+PHP message: PHP   7. class_exists() /app/vendor/yiisoft/yii2/base/Module.php:637
+PHP message: PHP   8. spl_autoload_call() /app/vendor/yiisoft/yii2/base/Module.php:637
+PHP message: PHP   9. yii\BaseYii::autoload() /app/vendor/yiisoft/yii2/base/Module.php:637
+PHP message: PHP  10. include() /app/vendor/yiisoft/yii2/BaseYii.php:293" while reading response header from upstream, client: 192.168.83.1, server: tapp.local, request: "GET /post HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.0-fpm.sock:", host: "tapp.local"
